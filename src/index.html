@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="navbar bg-Silver-Gray drop-shadow-2xl">
+      <div class="flex-1">
+        <a class="btn btn-ghost" onclick="window.location.reload()">
+          <img src="./assets/CompanyLogo.png" class="w-14" alt="" />
+          <span class="font-JustAnotherHand text-xl"
+            >Clean Streets Initative
+          </span>
+        </a>
+      </div>
+      <div class="flex-none gap-5 text-sm pr-5 hidden sm:flex">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about_us.html">About Us</a></p>
+        <p><a href="projects.html">Projects</a></p>
+        <p><a href="get_involved.html">Get Involved</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div class="flex-none gap-5 pr-5 sm:hidden">
+        <details class="dropdown dropdown-left dropdown-bottom">
+          <summary class="btn m-1 bg-Silver-Gray border-0 shadow-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+              />
+            </svg>
+          </summary>
+          <ul
+            class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+    <div
+      class="pt-52 pb-0 p-5 bg-no-repeat bg-cover"
+      style="background-image: url('./assets/HomeScreenBG.jpg')"
+    >
+      <div class="grid grid-rows-3">
+        <div class="grid row-span-1">
+          <h1 class="text-[50px] text-white">
+            Cleaner Streets, Brighter Futures.
+          </h1>
+        </div>
+        <div class="grid row-span-1">
+          <p>Paving the Way to a Greener Future</p>
+        </div>
+        <div class="grid row-span-1">
+          <a href="contact.html">
+            <button
+              type="button"
+              class="btn bg-Midnight-Blue text-white uppercase w-full text-[20px] font-normal rounded-[53px] sm:w-1/6"
+            >
+              contact us
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="bg-cover text-start sm:text-center" style="background-image: url('./assets/homescreenbg.jpg'); height: 400px">
+        <div class="grid grid-rows-3 gap-10">
+            <div class="grid row-span-1">
+                <h1 class="text-[52px] mt-10 text-white">
+                    Cleaner Streets, Brighter Futures.
+                </h1>
+            </div>
+            <div class="grid row-span-1">something</div>
+            <div class="grid row-span-1">somethign</div>
+        </div>
+    </div> -->
+  </body>
+</html>
