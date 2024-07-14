@@ -24,7 +24,7 @@
         <p><a href="contact.html">Contact</a></p>
       </div>
       <div class="flex-none gap-5 pr-5 sm:hidden">
-        <details class="dropdown dropdown-left dropdown-bottom">
+        <details class="dropdown dropdown-left dropdown-bottom w-10">
           <summary class="btn m-1 bg-Silver-Gray border-0 shadow-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -111,12 +111,12 @@
       </div>
     </div>
     <div class="text-[64px]">
-      <div class="grid grid-rows-2 text-center">
+      <div class="grid grid-rows-1 sm:grid-rows-2 text-center">
         <div class="grid row-span-1 font-KyivType font-thin">
           <h1 class="text-[40px]">Lets Change Lives 1 Pickup At A Time</h1>
         </div>
         <div div="grid row-span-1">
-          <div class="grid grid-cols-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2">
             <div class="col-span-1">
               <p
                 class="font-JustAnotherHand bg-Midnight-Blue text-white w-fit p-10 rounded-[58px] mx-auto"
@@ -135,8 +135,29 @@
         </div>
       </div>
       <div class="text-center">
-        <p class="font-JustAnotherHand bg-Midnight-Blue text-white w-fit p-10 rounded-[58px] mx-auto">Projects</p>
+        <p
+          class="font-JustAnotherHand bg-Midnight-Blue text-white w-fit p-10 rounded-[58px] mx-auto"
+        >
+          Projects
+        </p>
       </div>
     </div>
+    <div class="bg-Midnight-Blue text-white mt-5">
+      <p class="text-center font-KyivType text-[50px]">Connect With Us</p>
+
+      <div class="gap-5 flex items-center justify-center">
+        <img src="./assets/instagram_logo.svg" class="w-8 h-8" alt="" />
+        <p class="text-white font-KyivType self-center">Check Our Instagram</p>
+      </div>
+      <div class="font-KyivType text-center text-sm">
+        ©️ <span id="year"></span> Clean Streets Brighter Future. All rights
+        reserved
+      </div>
+    </div>
+    <script>
+      let year = document.getElementById("year");
+      let date = new Date().getFullYear();
+      year.innerHTML = date;
+    </script>
   </body>
 </html>
