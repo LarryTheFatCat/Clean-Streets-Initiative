@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="navbar bg-Silver-Gray drop-shadow-2xl">
+      <div class="flex-1">
+        <a class="btn btn-ghost" onclick="window.location.reload()">
+          <img src="./assets/CompanyLogo.png" class="w-14" alt="" />
+          <span class="font-JustAnotherHand text-xl"
+            >Clean Streets Initative
+          </span>
+        </a>
+      </div>
+      <div class="flex-none gap-5 text-sm pr-5 hidden sm:flex">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about_us.html">About Us</a></p>
+        <p><a href="projects.html">Projects</a></p>
+        <p><a href="get_involved.html">Get Involved</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div class="flex-none gap-5 pr-5 sm:hidden">
+        <details class="dropdown dropdown-left dropdown-bottom w-10">
+          <summary class="btn m-1 bg-Silver-Gray border-0 shadow-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+              />
+            </svg>
+          </summary>
+          <ul
+            class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+    <h1 class="text-[68px] font-JustAnotherHand text-center sm:text-[128px]">
+      More Projects Coming Soon...
+    </h1>
+    <div class="bg-Midnight-Blue text-white mt-5 fixed bottom-0 w-full">
+      <p class="text-center font-KyivType text-[50px]">Connect With Us</p>
+
+      <div class="gap-5 flex items-center justify-center">
+        <img src="./assets/instagram_logo.svg" class="w-8 h-8" alt="" />
+        <p class="text-white font-KyivType self-center">Check Our Instagram</p>
+      </div>
+      <div class="font-KyivType text-center text-sm">
+        ©️ <span id="year"></span> Clean Streets Brighter Future. All rights
+        reserved
+      </div>
+    </div>
+    <script>
+      let year = document.getElementById("year");
+      let date = new Date().getFullYear();
+      year.innerHTML = date;
+    </script>
+  </body>
+</html>
