@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         JustAnotherHand: ['Just Another Hand', 'cursive'],
+        Junge: ["Junge", 'cursive'],
+        KyivType: ["KyivType Sans Heavy3"],
+
       },
       colors: {
         'Silver-Gray': "#D9D9D9",
