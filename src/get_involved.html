@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Get Involved With Us!</title>
+  </head>
+  <body>
+    <div class="navbar bg-Silver-Gray drop-shadow-2xl">
+      <div class="flex-1">
+        <a class="btn btn-ghost" onclick="window.location.reload()">
+          <img src="./assets/CompanyLogo.png" class="w-14" alt="" />
+          <span class="font-JustAnotherHand text-xl"
+            >Clean Streets Initative
+          </span>
+        </a>
+      </div>
+      <div class="flex-none gap-5 text-sm pr-5 hidden sm:flex">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about_us.html">About Us</a></p>
+        <p><a href="projects.html">Projects</a></p>
+        <p><a href="get_involved.html">Get Involved</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div class="flex-none gap-5 pr-5 sm:hidden">
+        <details class="dropdown dropdown-left dropdown-bottom w-10">
+          <summary class="btn m-1 bg-Silver-Gray border-0 shadow-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+              />
+            </svg>
+          </summary>
+          <ul
+            class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+    <div class="text-center">
+      <h1 class="text-[64px] font-JustAnotherHand sm:text-[128px]">Want To Get Involved?</h1>
+      <h3 class="text-[32px] font-JustAnotherHand sm:text-[64px]">Join Our Movement!</h3>
+      <p class="font-Junge w-[294px] text-sm mx-auto sm:w-[588px] sm:text-lg">
+        At Clean Streets Clean Initiative we believe that change begins with
+        action. Whether you’re a passionate environmentalist, a community
+        advocate, or simply someone who cares about clean streets, there are
+        several ways you can get involved:
+      </p>
+      <ol class="list-decimal w-[294px] mx-auto pt-5 list-inside font-KyivType sm:w-[588px]">
+        <li>
+          Volunteer: Roll up your sleeves and join our community clean-up
+          drives. Together, we’ll pick up litter, plant trees, and transform
+          neglected spaces into vibrant corners of pride.
+        </li>
+        <li>
+          Spread the Word: Share our mission with your friends, family, and
+          social networks. Every voice matters, and by raising awareness, you
+          contribute to our cause.
+        </li>
+        <li>
+          Attend Events: Join us for workshops, tree-planting sessions, and
+          mural-painting events. Check our calendar for upcoming activities.
+        </li>
+        <li>
+          Become an Ambassador: Are you passionate about clean streets? Become
+          an ambassador for our cause. Advocate for change in your neighbourhood
+          and inspire others to follow suit.
+        </li>
+      </ol>
+    </div>
+    <img src="./assets/get_involved_stock.png" class="mx-auto relative top-5" alt="" />
+    <div class="bg-Midnight-Blue text-white w-full">
+      <p class="text-center font-KyivType text-[50px]">Connect With Us</p>
+
+      <div class="gap-5 flex items-center justify-center">
+        <img src="./assets/instagram_logo.svg" class="w-8 h-8" alt="" />
+        <p class="text-white font-KyivType self-center">Check Our Instagram</p>
+      </div>
+      <div class="font-KyivType text-center text-sm">
+        ©️ <span id="year"></span> Clean Streets Brighter Future. All rights
+        reserved
+      </div>
+    </div>
+    <script>
+      let year = document.getElementById("year");
+      let date = new Date().getFullYear();
+      year.innerHTML = date;
+    </script>
+  </body>
+</html>
