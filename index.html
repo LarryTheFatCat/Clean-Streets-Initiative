@@ -18,7 +18,7 @@
       </div>
       <div class="flex-none gap-5 text-sm pr-5 hidden sm:flex">
         <p><a href="index.html">Home</a></p>
-        <p><a>About Us</a></p>
+        <p><a onclick="smoothScroll()">About Us</a></p>
         <p><a href="./src/projects.html">Projects</a></p>
         <p><a href="./src/get_involved.html">Get Involved</a></p>
         <p><a href="./src/get_involved.html">Contact</a></p>
@@ -75,7 +75,7 @@
       </div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 p-5">
-      <div class="grid col-span-1">
+      <div class="grid col-span-1" id="about_us_div">
         <h1 class="text-[128px] font-JustAnotherHand">About Us</h1>
         <div class="grid grid-rows-2 pl-0 sm:pl-10">
           <div class="grid row-span-1">
@@ -92,9 +92,7 @@
           </div>
         </div>
       </div>
-      <div class="grid col-span-1 ml-auto">
-Our Story Image Text.png" class="" alt="" />
-      </div>
+      <div class="grid col-span-1 ml-auto"></div>
     </div>
     <div class="grid grid-rows-2 text-end">
       <div class="grid row-span-1">
@@ -132,14 +130,14 @@ Our Story Image Text.png" class="" alt="" />
               <p
                 class="font-JustAnotherHand bg-Midnight-Blue text-white w-fit p-10 rounded-[58px] mx-auto"
               >
-                Contact Us
+                <a href="./src/contact.html"> Contact Us </a>
               </p>
             </div>
             <div class="grid grid-cols-1">
               <p
                 class="font-JustAnotherHand bg-Midnight-Blue text-white w-fit p-10 rounded-[58px] mx-auto"
               >
-                Get Involved
+                <a href="./src/get_involved.html"> Get Involved </a>
               </p>
             </div>
           </div>
@@ -149,7 +147,7 @@ Our Story Image Text.png" class="" alt="" />
         <p
           class="font-JustAnotherHand bg-Midnight-Blue text-white w-fit p-10 rounded-[58px] mx-auto"
         >
-          Projects
+          <a href="./src/projects.html"> Projects </a>
         </p>
       </div>
     </div>
@@ -169,6 +167,12 @@ Our Story Image Text.png" class="" alt="" />
       let year = document.getElementById("year");
       let date = new Date().getFullYear();
       year.innerHTML = date;
+
+      function smoothScroll() {
+        document.querySelector("#about_us_div").scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
     </script>
   </body>
 </html>
